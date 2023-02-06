@@ -7,3 +7,16 @@
 script = ExtResource("1_4kl6q")
 
 [node name="SuzannesScene" parent="." instance=ExtResource("2_1sye6")]
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -273.0
+offset_top = 20.0
+offset_right = -18.0
+offset_bottom = 98.0
+grow_horizontal = 0
+text = "Press 1 to change to Low Quality
+Press 2 to change to Mid Quality
+Press 3 to change to High Quality"

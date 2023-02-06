@@ -1,16 +1,15 @@
-[gd_resource type="Resource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="QualitySettingsResource" load_steps=2 format=3 uid="uid://b4pjlxu4ynh15"]
 
 [ext_resource type="Script" path="res://QualitySettings/QualitySettingsResource/quality_settings_resource.gd" id="1_pvkpo"]
 
 [resource]
 script = ExtResource("1_pvkpo")
-ui_scale = 2
+viewport_start_size = Vector2(1152, 648)
 scaling_3d_value = 1.0
 scaling_3d_mode = 0
 vsync_mode = 0
 msaa_3d_mode = 0
 fxaa_enabled = false
-fullscreen_enabled = false
 ss_reflection_quality = 0
 ssao_quality = 0
 ssil_quality = 0

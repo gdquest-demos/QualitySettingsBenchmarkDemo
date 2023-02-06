@@ -8,7 +8,7 @@ func _ready() -> void:
 	
 	if QualitySettings.current_setting_idx == -1:
 		const TARGET_SPF = 0.016
-		const BENCHMARK_DIFFICULTY = 0.5
+		const BENCHMARK_DIFFICULTY = 1.0
 		
 		await benchmark.benchmark(QualitySettings.quality_settings_resources)
 		var optimal_setting_idx = benchmark.get_optimal_result(TARGET_SPF, BENCHMARK_DIFFICULTY)

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="QualitySettingsResource" load_steps=2 format=3 uid="uid://cdaxb4k7ephst"]
 
 [ext_resource type="Script" path="res://QualitySettings/QualitySettingsResource/quality_settings_resource.gd" id="1_wlplh"]
 

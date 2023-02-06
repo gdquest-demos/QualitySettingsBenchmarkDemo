@@ -1,16 +1,15 @@
-[gd_resource type="Resource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="QualitySettingsResource" load_steps=2 format=3 uid="uid://djr0iw0x1s7tt"]
 
 [ext_resource type="Script" path="res://QualitySettings/QualitySettingsResource/quality_settings_resource.gd" id="1_wlplh"]
 
 [resource]
 script = ExtResource("1_wlplh")
-ui_scale = 2
+viewport_start_size = Vector2(1152, 648)
 scaling_3d_value = 1.0
 scaling_3d_mode = 1
 vsync_mode = 2
 msaa_3d_mode = 3
 fxaa_enabled = true
-fullscreen_enabled = false
 ss_reflection_quality = 3
 ssao_quality = 4
 ssil_quality = 4
