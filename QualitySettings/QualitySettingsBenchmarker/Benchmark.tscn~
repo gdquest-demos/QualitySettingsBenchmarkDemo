@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://QualitySettings/QualitySettingsBenchmarker/Benchmark.gd" id="1_qywv6"]
+[ext_resource type="PackedScene" uid="uid://48hhbmvj25pd" path="res://SuzannesScene.tscn" id="2_50cnq"]
+
+[node name="Benchmark" type="SubViewport" node_paths=PackedStringArray("viewport", "world_environment")]
+own_world_3d = true
+size = Vector2i(1152, 648)
+render_target_update_mode = 0
+script = ExtResource("1_qywv6")
+viewport = NodePath(".")
+world_environment = NodePath("")
+
+[node name="Main" parent="." instance=ExtResource("2_50cnq")]

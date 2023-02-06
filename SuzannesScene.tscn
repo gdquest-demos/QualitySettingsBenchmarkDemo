@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://b21mpncr4tbhy"]
+
+[ext_resource type="Script" path="res://SuzannesScene.gd" id="1_kghu3"]
+[ext_resource type="PackedScene" uid="uid://1og12l1rvpkw" path="res://Suzanne.glb" id="2_a1ww3"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aumw4"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_18xjx"]
+sky_material = SubResource("ProceduralSkyMaterial_aumw4")
+
+[sub_resource type="Environment" id="Environment_hc2vb"]
+background_mode = 2
+sky = SubResource("Sky_18xjx")
+tonemap_mode = 2
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
+
+[node name="SuzannesScene" type="Node3D"]
+script = ExtResource("1_kghu3")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_hc2vb")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="FPSLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Suzanne" parent="." instance=ExtResource("2_a1ww3")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.712, 0.373635, -0.59452, 0, 0.846677, 0.532107, 0.70218, -0.37886, 0.602834, -4.39774, 9.29726, 4.89846)
