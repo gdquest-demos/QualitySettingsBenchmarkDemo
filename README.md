@@ -1,4 +1,4 @@
-# QualitySettingsBenchmarkDemo
+# Quality Settings Benchmark Demo
 A simple Quality Settings demo with user hardware benchmark.
 
 ## How it works
